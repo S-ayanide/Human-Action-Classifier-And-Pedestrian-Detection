@@ -29,11 +29,10 @@ class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
 #         return (x,w,y,h),np.zeros((48,48),np.uint8),img
 #     return (x,w,y,h),roi_gray,img
 
-
-cap = cv2.VideoCapture(0)
-
 mean_store_rating = 50 #On a scale of 1-100, 50 being neutral store rating
-frames = 0
+frames = 1
+    
+cap = cv2.VideoCapture(0)
 
 while True:
     # Grab a single frame of video
@@ -57,10 +56,23 @@ while True:
         # make a prediction on the ROI, then lookup the class
 
             preds = classifier.predict(roi)[0]            
-            label=class_labels[preds.argmax()]
-            print(label)
-            if(label == 'Happy'):
-                mean_store_rating += 
+            label=class_labels[preds.argmax()]            
+            
+            # Get average store rating
+            
+            if(label == None):
+                pass
+                
+            if(label == 'Happy'):                 
+                mean_store_rating += frames/100
+                
+            if(label == 'Neutral' or label == 'Surprised'):
+                pass
+                
+            if(label == 'Angry' or label == 'Sad'):
+                mean_store_rating -= frames/100    
+            print(mean_store_rating)
+            
             label_position = (x,y)
             cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
         else:
@@ -68,6 +80,6 @@ while True:
     cv2.imshow('Emotion Detector',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-
+    
 cap.release()
 cv2.destroyAllWindows()
