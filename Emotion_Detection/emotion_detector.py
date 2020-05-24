@@ -32,7 +32,8 @@ class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
 
 cap = cv2.VideoCapture(0)
 
-
+mean_store_rating = 50 #On a scale of 1-100, 50 being neutral store rating
+frames = 0
 
 while True:
     # Grab a single frame of video
@@ -55,8 +56,11 @@ while True:
 
         # make a prediction on the ROI, then lookup the class
 
-            preds = classifier.predict(roi)[0]
+            preds = classifier.predict(roi)[0]            
             label=class_labels[preds.argmax()]
+            print(label)
+            if(label == 'Happy'):
+                mean_store_rating += 
             label_position = (x,y)
             cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
         else:
