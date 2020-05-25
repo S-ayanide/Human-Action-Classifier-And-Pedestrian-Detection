@@ -73,7 +73,7 @@ This algorithm could be used in any type of camera in a store which will help de
 
 ## Usage
 
-Download the openpose VGG tf-model with command line `./download.sh`(/Online-Realtime-Action-Recognition-based-on-OpenPose/Pose/graph_models/VGG_origin) or fork [here](https://www.instagram.com/s_ayanide/), and place it under the corresponding folder
+Download the openpose VGG tf-model with command line `./download.sh`(/Online-Realtime-Action-Recognition-based-on-OpenPose/Pose/graph_models/VGG_origin) or fork [here](https://drive.google.com/open?id=1HsAfvDXDfsM4FYsugVmXfc6lWlqaZw6m), and place it under the corresponding folder
 
 * ### Using Pip
 
