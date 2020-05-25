@@ -4,10 +4,16 @@ This algorithm could be used in any type of camera in a store which will help de
 
 # Dependencies
 
-* OpenCV 3 or 4 
-* Tensorflow 1 or 2
+* OpenCV 3
+* Tensorflow 2.0.0
+* Scikit-learn 0.22.1
+* Keras 2.3.1
+* Numpy 1.18.1
+* Sliding Window 0.0.13
+* Scipy 1.4.1
+* Pathlib 1.0.1
 
-To install the required packages, run `pip install -r requirements.txt`.
+To install the required packages, run `pip install -r requirements.txt`
 
 ## Component Breakdown
 
