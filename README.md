@@ -105,7 +105,12 @@ This application could be broken down into three categories -
 
 * ### Body Language Detection
 
-  <img src="https://github.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/tree/master/Screenshots/webcam_multi-people.gif" height="300px" width="300px" /> <img src="https://github.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/tree/master/Screenshots/webcam_under_scene-1.gif" height="300px" width="300px" />
+  <p align="center">
+    <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_multi-people.gif", width="540">
+  <p align="center">
+      <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_under_scene-1.gif", width="540">
+  <p align="center">
+      <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_under_scene-2.gif", width="540">
 
 
 ## Activity Diagram
