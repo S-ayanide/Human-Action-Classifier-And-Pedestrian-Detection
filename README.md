@@ -100,8 +100,9 @@ This application could be broken down into three categories -
   <img src="./Screenshots/Neutral.PNG" height="300px" width="300px" /> <img src="./Screenshots/Happy.PNG" height="300px" width="300px" /> <img src="./Screenshots/Surprise.PNG" height="300px" width="300px" />
 
 * ### Pedestrian Detection
-
-  Yet to be done 😔
+  
+  <p align="center">
+  <img src="./Screenshots/output.jpg" height="300px" width="540" />
 
 * ### Body Language Detection
 
