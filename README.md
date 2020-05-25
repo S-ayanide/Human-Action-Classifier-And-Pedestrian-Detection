@@ -105,7 +105,8 @@ This application could be broken down into three categories -
 
 * ### Body Language Detection
 
-  Yet to be done 😔
+  <img src="https://github.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/tree/master/Screenshots/webcam_multi-people.gif" height="300px" width="300px" /> <img src="https://github.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/tree/master/Screenshots/webcam_under_scene-1.gif" height="300px" width="300px" />
+
 
 ## Activity Diagram
 
