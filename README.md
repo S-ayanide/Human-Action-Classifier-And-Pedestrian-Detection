@@ -79,6 +79,10 @@ Download the openpose VGG tf-model with command line `./download.sh`(/Online-Rea
 
   To start the webcam directly from your command prompt or PowerShell window, type `python main.py` after navigating to the `Online-Realtime-Action-Recognition-based-on-OpenPose/` folder.
   You can choose to test video with command `python main.py --video=test.mp4`
+  
+  You can choose different openpose pretrained model in `Script`.
+  **VGG_origin:** training with the VGG net, as same as the CMU providing caffemodel, more accurate but slower, **mobilenet_thin:** training with the Mobilenet, much smaller than the origin VGG, faster but less accurate.
+  **However, Please attention that the Action Dataset in this repo is collected along with the VGG model running.**
 
 * ### For Pedestrian Detection Using Non-Maximum-Suppression
 
