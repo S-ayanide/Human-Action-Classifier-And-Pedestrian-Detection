@@ -75,19 +75,18 @@ This algorithm could be used in any type of camera in a store which will help de
 
 Download the openpose VGG tf-model with command line `./download.sh`(/Online-Realtime-Action-Recognition-based-on-OpenPose/Pose/graph_models/VGG_origin) or fork [here](https://drive.google.com/open?id=1HsAfvDXDfsM4FYsugVmXfc6lWlqaZw6m), and place it under the corresponding folder
 
-* ### Using Pip
+* ### For Human Action Classification
 
   To start the webcam directly from your command prompt or PowerShell window, type `python main.py` after navigating to the `Online-Realtime-Action-Recognition-based-on-OpenPose/` folder.
   You can choose to test video with command `python main.py --video=test.mp4`
 
-* ### Using Conda Env
+* ### For Pedestrian Detection Using Non-Maximum-Suppression
 
-  To run this project on a conda setup, open `main.py` from an anaconda supported IDE, preferably `spyder` and run the file either by clicking the play button or `Ctrl+A and Shift+enter`
+  Navigate to `Pedestrian-Detection/` folder inside the main/root project directory and type `python detect.py --image images` from your command prompt.
 
-You can choose different openpose pretrained model in `Script`.
-**VGG_origin:** training with the VGG net, as same as the CMU providing caffemodel, more accurate but slower
-**mobilenet_thin:** training with the Mobilenet, much smaller than the origin VGG, faster but less accurate.
-However, Please attention that the Action Dataset in this repo is collected along with the VGG model running.
+* ### For Facial Emotion Recognition
+
+  Navigate to `Emotion_Detection/` folder inside the main/root project directory and type `python emotion_detector.py` from your command prompt.
 
 ## Component Breakdown
 
