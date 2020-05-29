@@ -115,7 +115,7 @@ This application could be broken down into three categories -
       <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_under_scene-1.gif", width="540">
   <p align="center">
       <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_under_scene-2.gif", width="540">
-
+    <img src="https://raw.githubusercontent.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/master/Pedestrian-Detection/images/person_23.bmp", width="540">
 
 ## Activity Diagram
 
