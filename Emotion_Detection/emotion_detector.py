@@ -8,26 +8,9 @@ import cv2
 import numpy as np
 
 face_classifier = cv2.CascadeClassifier('D:\Projects\AI\Minor Project\Dataset\haarcascade_frontalface_default.xml')
-classifier =load_model('D:\Projects\AI\Minor Project\Emotion_Detection\Emotion_little_vgg.h5')
+classifier =load_model('D:\Projects\AI\Minor Project\Emotion_Detection\Emotion_little_vgg.h5') # To predict
 
 class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
-
-# def face_detector(img):
-#     # Convert image to grayscale
-#     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-#     faces = face_classifier.detectMultiScale(gray,1.3,5)
-#     if faces is ():
-#         return (0,0,0,0),np.zeros((48,48),np.uint8),img
-
-#     for (x,y,w,h) in faces:
-#         cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
-#         roi_gray = gray[y:y+h,x:x+w]
-
-#     try:
-#         roi_gray = cv2.resize(roi_gray,(48,48),interpolation=cv2.INTER_AREA)
-#     except:
-#         return (x,w,y,h),np.zeros((48,48),np.uint8),img
-#     return (x,w,y,h),roi_gray,img
 
 mean_store_rating = 50 #On a scale of 1-100, 50 being neutral store rating
 frames = 1
@@ -45,7 +28,7 @@ while True:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
         roi_gray = gray[y:y+h,x:x+w]
         roi_gray = cv2.resize(roi_gray,(48,48),interpolation=cv2.INTER_AREA)
-    # rect,face,image = face_detector(frame)
+        # rect,face,image = face_detector(frame)
 
 
         if np.sum([roi_gray])!=0:
