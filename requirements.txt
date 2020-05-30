@@ -5,7 +5,7 @@ Keras==2.3.1
 nmslib==2.0.5
 numpy==1.18.1
 opencv-python
-pandas==1.0.1
+pandas
 pathlib==1.0.1
 pathtools==0.1.2
 psutil==5.7.0
