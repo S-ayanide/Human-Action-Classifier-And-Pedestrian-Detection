@@ -122,7 +122,7 @@ This application could be broken down into three categories -
   <p align="center">
       <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_under_scene-2.gif", width="540">
   <p align="center">
-      <img src="Screenshots/webcam_under_scene-2.bmp", width="540">
+      <img src="./Screenshots/webcam_under_scene-3.bmp", width="540">
 
 ## Activity Diagram
 
