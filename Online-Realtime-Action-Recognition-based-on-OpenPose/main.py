@@ -56,14 +56,14 @@ while cv.waitKey(1) < 0:
 
         # 显示检测到的人数
         num_label = "Human: {0}".format(len(humans))
-        cv.putText(show, num_label, (5, height-45), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
+        cv.putText(show, num_label, (5, height-90), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3) #height-45 changed
 
         # 显示目前的运行时长及总帧数
         if frame_count == 1:
             run_timer = time.time()
         run_time = time.time() - run_timer
         time_frame_label = '[Time:{0:.2f} | Frame:{1}]'.format(run_time, frame_count)
-        cv.putText(show, time_frame_label, (5, height-15), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
+        cv.putText(show, time_frame_label, (5, height-65), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3) #height-15 changed
 
         cv.imshow('Action Recognition based on OpenPose', show)
         video_writer.write(show)
