@@ -7,8 +7,8 @@ from keras.preprocessing import image
 import cv2
 import numpy as np
 
-face_classifier = cv2.CascadeClassifier('D:\Projects\AI\Minor Project\Dataset\haarcascade_frontalface_default.xml')
-classifier =load_model('D:\Projects\AI\Minor Project\Emotion_Detection\Emotion_little_vgg.h5') # To predict
+face_classifier = cv2.CascadeClassifier('..\Dataset\haarcascade_frontalface_default.xml')
+classifier =load_model('.\Emotion_little_vgg.h5') # To predict
 
 class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
 
