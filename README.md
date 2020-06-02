@@ -75,7 +75,7 @@ This algorithm could be used in any type of camera in a store which will help de
   conda create -n <Your_Virtual_Environment> tensorflow
   conda activate <Your_Virtual_Environment>
   ```
-  **To install the required packages, run `conda install -c anaconda requirements.txt`**
+  **To install the required packages, run `pip install requirements.txt`**
 
 ## Usage
 
