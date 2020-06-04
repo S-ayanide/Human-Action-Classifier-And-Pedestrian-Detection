@@ -29,7 +29,7 @@ def choose_run_mode(args):
     else:
         # Webcam input
         cap = cv.VideoCapture(0)
-        # 设置摄像头像素值
+        # Set camera pixel value
         cap.set(cv.CAP_PROP_FRAME_WIDTH, cam_width)
         cap.set(cv.CAP_PROP_FRAME_HEIGHT, cam_height)
         out_file_path = str(out_file_path / 'webcam_tf_out.mp4')

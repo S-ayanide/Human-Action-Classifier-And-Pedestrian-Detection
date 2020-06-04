@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 
 face_classifier = cv2.CascadeClassifier('..\Dataset\haarcascade_frontalface_default.xml')
-classifier =load_model('.\Emotion_little_vgg.h5') # To predict
+classifier =load_model('./Emotion_little_vgg.h5') # To predict
 
 class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
 

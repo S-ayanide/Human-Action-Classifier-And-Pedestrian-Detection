@@ -113,13 +113,13 @@ dataset = raw_data.values
 X = dataset[0:3289, 0:36].astype(float)  # 忽略run数据
 Y = dataset[0:3289, 36]
 
-# 将类别编码为数字
+# Encode categories as numbers
 # encoder = LabelEncoder()
 # encoder_Y = encoder.fit_transform(Y)
 # print(encoder_Y[0], encoder_Y[900], encoder_Y[1800], encoder_Y[2700])
 # encoder_Y = [0]*744 + [1]*722 + [2]*815 + [3]*1008 + [4]*811
 encoder_Y = [0]*744 + [1]*722 + [2]*815 + [3]*1008
-# one hot 编码
+# one hot coding
 dummy_Y = np_utils.to_categorical(encoder_Y)
 
 # train test split

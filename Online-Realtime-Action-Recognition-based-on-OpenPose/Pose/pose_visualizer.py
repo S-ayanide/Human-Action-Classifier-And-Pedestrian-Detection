@@ -37,11 +37,11 @@ class TfPoseVisualizer:
 
         for human in humans:
             xs, ys, centers = [], [], {}
-            # 将所有关节点绘制到图像上
+            # Draw all relevant nodes on the image
             for i in range(CocoPart.Background.value):
                 if i not in human.body_parts.keys():
 
-                    # 对于缺失的数据，补0
+                    # For missing data, Supplement 0
                     record_joints_norm += [0.0, 0.0]
                     continue
 
@@ -55,27 +55,27 @@ class TfPoseVisualizer:
 
                 xs.append(center[0])
                 ys.append(center[1])
-                # 绘制关节点
+                # Draw joint points
                 cv.circle(npimg, center, 3, CocoColors[i], thickness=TfPoseVisualizer.Thickness_ratio * 2,
                           lineType=8, shift=0)
-            # 将属于同一人的关节点按照各个部位相连
+            # Connect joints belonging to the same person according to each part
             for pair_order, pair in enumerate(CocoPairsRender):
                 if pair[0] not in human.body_parts.keys() or pair[1] not in human.body_parts.keys():
                     continue
                 cv.line(npimg, centers[pair[0]], centers[pair[1]], CocoColors[pair_order],
                         thickness=TfPoseVisualizer.Thickness_ratio, lineType=8, shift=0)
 
-            # 根据每个人的关节点信息生成ROI区域
+            # Generate ROI area based on each person's joint information
             tl_x = min(xs)
             tl_y = min(ys)
             width = max(xs) - min(xs)
             height = max(ys) - min(ys)
             bboxes.append([tl_x, tl_y, width, height])
 
-            # 记录每一帧的所有关节点
+            # Record all relevant nodes of each frame
             joints.append(centers)
 
-            # 记录coco的1号点作为xcenter
+            # Record coco's point 1 as xcenter
             if 1 in centers:
                 xcenter.append(centers[1][0])
         return npimg, joints, bboxes, xcenter, record_joints_norm
