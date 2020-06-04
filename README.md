@@ -97,7 +97,7 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
 
   Navigate to `Emotion_Detection/` folder inside the main/root project directory and type `python emotion_detector.py` from your command prompt.
   
-- ### For Facial Emotion Recognition
+- ### For PoseNet - Pose Estimation
 
   Navigate to `posenet-py/` folder inside the main/root project directory and type `python webcam_demo.py` from your command prompt.
 
