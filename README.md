@@ -115,6 +115,7 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
   1) Navigate to `posenet-py/` folder inside the main/root project directory.
   2) Download a folder of suitable test images by first running the `get_test_images.py` script.
   3) Navigate to `posenet-py/` folder and run following command from command prompt:
+     
      `python image_demo.py --model 101 --image_dir ./images --output_dir ./output`
   4) Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
 
