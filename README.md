@@ -104,7 +104,7 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
   If you want to test the application using a video follow steps provided below:
   1) Download the Test Video.
   2) Navigate to 'posenet-py' folder and paste video here.
-     You can download the test video [here](https://drive.google.com/file/d/1SfoekxApT3gIBs_b4pXeDnDtNy6T8PIx/view?usp=sharing) and 
+     You can download the test video [here](https://drive.google.com/file/d/1aDV09dDRyQneKpiH73oXOJU--bUO6eqV/view?usp=sharing). 
   3) Navigate to `posenet-py/` folder inside the main/root project directory and type `python webcam_demo.py` from your command prompt.
 
 ## Component Breakdown
