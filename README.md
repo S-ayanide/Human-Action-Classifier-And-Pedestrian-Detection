@@ -100,6 +100,9 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
 - ### For PoseNet - Pose Estimation
 
   Navigate to `posenet-py/` folder inside the main/root project directory and type `python webcam_demo.py` from your command prompt.
+  
+  If you want to test the application using a video follow steps provided below:
+  1) Navigate to `posenet-py/` folder inside the main/root project directory and type `python webcam_demo.py` from your command prompt.
 
 ## Component Breakdown
 
