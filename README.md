@@ -5,7 +5,7 @@ This algorithm could be used in any type of camera in a store which will help de
 # Dependencies
 
 - Python >= 3.5
-- Opencv >= 3.4.1
+- Opencv == 4.2.0.32
 - Tensorflow 2.0.0
 - Scikit-learn 0.22.1
 - Keras 2.3.1
@@ -79,16 +79,13 @@ This algorithm could be used in any type of camera in a store which will help de
 
 ## Usage
 
-Download the openpose VGG tf-model with command line `./download.sh`(/Online-Realtime-Action-Recognition-based-on-OpenPose/Pose/graph_models/VGG_origin) or fork [here](https://drive.google.com/open?id=1HsAfvDXDfsM4FYsugVmXfc6lWlqaZw6m), and place it under the corresponding folder
+Download the Resnet-32 Kinetic Model [here](https://drive.google.com/file/d/1raAySFB9lmu3h6X8a-DjBHEez4jWPDZT/view?usp=sharing), and place it under the corresponding folder( `human-activity-recognition/` )
 
 - ### For Human Action Classification
 
-  To start the webcam directly from your command prompt or PowerShell window, type `python main.py` after navigating to the `Online-Realtime-Action-Recognition-based-on-OpenPose/` folder.
-  You can choose to test video with command `python main.py --video=test.mp4`
-
-  You can choose different openpose pretrained model in `Script`.
-  **VGG_origin:** training with the VGG net, as same as the CMU providing caffemodel, more accurate but slower, **mobilenet_thin:** training with the Mobilenet, much smaller than the origin VGG, faster but less accurate.
-  **However, Please attention that the Action Dataset in this repo is collected along with the VGG model running.**
+  To start the webcam directly from your command prompt or PowerShell window, type `python human_activity_reco.py --model resnet-34_kinetics.onnx --classes action_recognition_kinetics.txt` after navigating to the `human-activity-recognition/` folder.
+  You can choose to test on example video with command `python human_activity_reco.py --model resnet-34_kinetics.onnx --classes action_recognition_kinetics.txt --input example_activities.mp4`  
+Navigating to the `human-activity-recognition/` folder and download the test video [here](https://drive.google.com/file/d/1SfoekxApT3gIBs_b4pXeDnDtNy6T8PIx/view?usp=sharing)
 
 - ### For Pedestrian Detection Using Non-Maximum-Suppression
 
@@ -131,6 +128,7 @@ This application could be broken down into three categories -
 ### Dataset Used
 
 Haarcascades :- [Dataset](https://drive.google.com/open?id=1YmAJaR06jrQsIS5ixd3gMsKTL7JhLuVa)
+Resnet :- [Dataset](https://drive.google.com/file/d/1raAySFB9lmu3h6X8a-DjBHEez4jWPDZT/view?usp=sharing)
 
 _Download this and paste it at the root of the project_
 
