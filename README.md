@@ -84,8 +84,10 @@ Download the Resnet-32 Kinetic Model [here](https://drive.google.com/file/d/1raA
 - ### For Human Action Classification
 
   To start the webcam directly from your command prompt or PowerShell window, type `python human_activity_reco.py --model resnet-34_kinetics.onnx --classes action_recognition_kinetics.txt` after navigating to the `human-activity-recognition/` folder.
+  
   You can choose to test on example video with command `python human_activity_reco.py --model resnet-34_kinetics.onnx --classes action_recognition_kinetics.txt --input example_activities.mp4`  
-Navigating to the `human-activity-recognition/` folder and download the test video [here](https://drive.google.com/file/d/1SfoekxApT3gIBs_b4pXeDnDtNy6T8PIx/view?usp=sharing)
+
+You can download the test video [here](https://drive.google.com/file/d/1SfoekxApT3gIBs_b4pXeDnDtNy6T8PIx/view?usp=sharing) and navigating to the `human-activity-recognition/` folder and paste it there.
 
 - ### For Pedestrian Detection Using Non-Maximum-Suppression
 
