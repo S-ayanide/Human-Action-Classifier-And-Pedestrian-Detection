@@ -109,6 +109,14 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
      
      You can download the test video [here](https://drive.google.com/file/d/1aDV09dDRyQneKpiH73oXOJU--bUO6eqV/view?usp=sharing).
   3) Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
+  
+  If you want to test the application using simple images using `images_demo.py` which runs inference on an input folder of images and     outputs those images with the keypoints and skeleton overlayed, follow below steps:
+  
+  1) Navigate to `posenet-py/` folder inside the main/root project directory.
+  2) Download a folder of suitable test images by first running the `get_test_images.py` script.
+  3) Navigate to `posenet-py/` folder and run following command from command prompt:
+     `python image_demo.py --model 101 --image_dir ./images --output_dir ./output`
+  4) Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
 
 ## Component Breakdown
 
