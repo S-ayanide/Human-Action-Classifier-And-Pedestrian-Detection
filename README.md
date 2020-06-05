@@ -6,13 +6,13 @@ This algorithm could be used in any type of camera in a store which will help de
 
 - Python >= 3.5
 - Opencv == 4.2.0.32
-- Tensorflow 2.0.0
-- Scikit-learn 0.22.1
-- Keras 2.3.1
-- Numpy 1.18.1
-- Sliding Window 0.0.13
-- Scipy 1.4.1
-- Pathlib 1.0.1
+- Tensorflow==2.0.0
+- Scikit-learn==0.22.1
+- Keras==2.3.1
+- Numpy==1.18.1
+- slidingwindow==0.0.13
+- scipy=1.4.1
+- pathlib==1.0.1
 
 ## Setting up a Virtual Environment
 
@@ -152,6 +152,7 @@ This application could be broken down into three categories -
 ### Dataset Used
 
 Haarcascades :- [Dataset](https://drive.google.com/open?id=1YmAJaR06jrQsIS5ixd3gMsKTL7JhLuVa)
+
 Resnet :- [Dataset](https://drive.google.com/file/d/1raAySFB9lmu3h6X8a-DjBHEez4jWPDZT/view?usp=sharing)
 
 _Download this and paste it at the root of the project_
