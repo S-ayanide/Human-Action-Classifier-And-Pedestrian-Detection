@@ -145,9 +145,17 @@ This application could be broken down into three categories -
   <p align="center">
       <img src="./Screenshots/webcam_under_scene-3.bmp", width="540">
 
-## Activity Diagram
+## UML Diagram
 
-<img src="./ActivityDiagram1.png" height="500px" width="500px" />
+- ### Activity Diagram
+
+  <p align="center">
+    <img src="./UML/ActivityDiagram.png" width="520" />
+  
+- ### Use Case Diagram
+
+  <p align="center">
+    <img src="./UML/UseCaseDiagram.png" width="520" />
 
 ### Dataset Used
 
