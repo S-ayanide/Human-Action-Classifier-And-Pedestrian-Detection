@@ -151,11 +151,9 @@ This application could be broken down into three categories -
 
 ### Dataset Used
 
-Haarcascades :- [Dataset](https://drive.google.com/open?id=1YmAJaR06jrQsIS5ixd3gMsKTL7JhLuVa)
+Haarcascades :- [Dataset](https://drive.google.com/open?id=1YmAJaR06jrQsIS5ixd3gMsKTL7JhLuVa) (_Download this and paste it at the root of the project_)
 
 Resnet :- [Dataset](https://drive.google.com/file/d/1raAySFB9lmu3h6X8a-DjBHEez4jWPDZT/view?usp=sharing)
-
-_Download this and paste it at the root of the project_
 
 ## Others
 
