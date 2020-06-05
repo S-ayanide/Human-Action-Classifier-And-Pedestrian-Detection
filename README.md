@@ -95,11 +95,11 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
 
 - ### For Facial Emotion Recognition
 
-  Navigate to `Emotion_Detection/` folder inside the main/root project directory and type `python emotion_detector.py` from your command prompt.
+  Option 1 - For webcam based testing navigate to `Emotion_Detection/` folder inside the main/root project directory and type `python emotion_detector.py` from your command prompt.
   
 - ### For PoseNet - Pose Estimation
 
-  Navigate to `posenet-py/` folder inside the main/root project directory and type `python webcam_demo.py` from your command prompt.
+  Option 2 - Navigate to `posenet-py/` folder inside the main/root project directory and type `python webcam_demo.py` from your command prompt.
   
   If you want to test the application using a video follow steps provided below:
   1) Download the Test Video (MP4 Format).
@@ -110,7 +110,7 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
      You can download the test video [here](https://drive.google.com/file/d/1aDV09dDRyQneKpiH73oXOJU--bUO6eqV/view?usp=sharing).
   3) Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
   
-  If you want to test the application using simple images using `images_demo.py` which runs inference on an input folder of images and     outputs those images with the keypoints and skeleton overlayed, follow below steps:
+  Option 3 - If you want to test the application using simple images using `images_demo.py` which runs inference on an input folder of images and     outputs those images with the keypoints and skeleton overlayed, follow below steps:
   
   1) Navigate to `posenet-py/` folder inside the main/root project directory.
   2) Download a folder of suitable test images by first running the `get_test_images.py` script.
