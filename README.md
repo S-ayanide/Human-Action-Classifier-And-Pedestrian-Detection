@@ -137,13 +137,7 @@ This application could be broken down into three categories -
 - ### Body Language Detection
 
   <p align="center">
-    <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_multi-people.gif", width="540">
-  <p align="center">
-      <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_under_scene-1.gif", width="540">
-  <p align="center">
-      <img src="https://github.com/LZQthePlane/Online-Realtime-Action-Recognition-based-on-OpenPose/blob/master/test_out/webcam_under_scene-2.gif", width="540">
-  <p align="center">
-      <img src="./Screenshots/webcam_under_scene-3.bmp", width="540">
+    <img src="https://github.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/blob/master/Screenshots/activity_recognition.gif", width="540">  
 
 ## UML Diagram
 
