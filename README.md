@@ -84,8 +84,8 @@ Download the Resnet-32 Kinetic Model [here](https://drive.google.com/file/d/1raA
 - ### For Human Action Classification
 
   To start the webcam directly from your command prompt or PowerShell window, type `python human_activity_reco.py --model resnet-34_kinetics.onnx --classes action_recognition_kinetics.txt` after navigating to the `human-activity-recognition/` folder.
-  
-  You can choose to test on example video with command `python human_activity_reco.py --model resnet-34_kinetics.onnx --classes action_recognition_kinetics.txt --input example_activities.mp4`  
+
+  You can choose to test on example video with command `python human_activity_reco.py --model resnet-34_kinetics.onnx --classes action_recognition_kinetics.txt --input example_activities.mp4`
 
 You can download the test video [here](https://drive.google.com/file/d/1SfoekxApT3gIBs_b4pXeDnDtNy6T8PIx/view?usp=sharing) and navigating to the `human-activity-recognition/` folder and paste it there.
 
@@ -96,28 +96,31 @@ You can download the test video [here](https://drive.google.com/file/d/1SfoekxAp
 - ### For Facial Emotion Recognition
 
   For webcam based testing navigate to `Emotion_Detection/` folder inside the main/root project directory and type `python emotion_detector.py` from your command prompt.
-  
+
 - ### For PoseNet - Pose Estimation
 
   Option 1 - Navigate to `posenet-py/` folder inside the main/root project directory and type `python webcam_demo.py` from your command prompt.
-  
+
   Option 2 - If you want to test the application using a video follow steps provided below:
-  1) Download the Test Video (MP4 Format).
-  2) Navigate to `posenet-py/` folder and paste video here.
-     
+
+  1. Download the Test Video (MP4 Format).
+  2. Navigate to `posenet-py/` folder and paste video here.
+
      Rename the video file as video.mp4
-     
+
      You can download the test video [here](https://drive.google.com/file/d/1aDV09dDRyQneKpiH73oXOJU--bUO6eqV/view?usp=sharing).
-  3) Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
-  
-  Option 3 - If you want to test the application using simple images using `images_demo.py` which runs inference on an input folder of images and     outputs those images with the keypoints and skeleton overlayed, follow below steps:
-  
-  1) Navigate to `posenet-py/` folder inside the main/root project directory.
-  2) Download a folder of suitable test images by first running the `get_test_images.py` script.
-  3) Navigate to `posenet-py/` folder and run following command from command prompt:
-     
+
+  3. Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
+
+  Option 3 - If you want to test the application using simple images using `images_demo.py` which runs inference on an input folder of images and outputs those images with the keypoints and skeleton overlayed, follow below steps:
+
+  1. Navigate to `posenet-py/` folder inside the main/root project directory.
+  2. Download a folder of suitable test images by first running the `get_test_images.py` script.
+  3. Navigate to `posenet-py/` folder and run following command from command prompt:
+
      `python image_demo.py --model 101 --image_dir ./images --output_dir ./output`
-  4) Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
+
+  4. Navigate to `posenet-py/` folder inside the main/root project directory and type `python video_demo.py` from your command prompt.
 
 ## Component Breakdown
 
@@ -127,7 +130,7 @@ This application could be broken down into three categories -
 
   It can detect human emotions of all the customers and give an automated overall happiness rating to the store. Some Screenshots of the live application can be found below.
 
-  <img src="./Screenshots/Neutral.PNG" height="300px" width="300px" /> <img src="./Screenshots/Happy.PNG" height="300px" width="300px" /> <img src="./Screenshots/Surprise.PNG" height="300px" width="300px" />
+  <img src="./Screenshots/Neutral.PNG" height="300px" width="300px" /> <img src="./Screenshots/Happy2.png" height="300px" width="300px" /> <img src="./Screenshots/Surprise.PNG" height="300px" width="300px" />
 
 - ### Pedestrian Detection
 
@@ -137,7 +140,7 @@ This application could be broken down into three categories -
 - ### Body Language Detection
 
   <p align="center">
-    <img src="https://github.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/blob/master/Screenshots/activity_recognition.gif", width="540">  
+    <img src="https://github.com/S-ayanide/Human-Action-Classifier-And-Pedestrian-Detection/blob/master/Screenshots/activity_recognition.gif", width="540">
 
 ## UML Diagram
 
@@ -145,7 +148,7 @@ This application could be broken down into three categories -
 
   <p align="center">
     <img src="./UML/ActivityDiagram.png" width="520" />
-  
+
 - ### Use Case Diagram
 
   <p align="center">
